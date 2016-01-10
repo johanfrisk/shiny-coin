@@ -43,7 +43,7 @@ shinyUI(fluidPage(
                                 tabPanel("Histogram",
                                          plotOutput("hist"),
                                          p("Let's run the experiment with 
-                                                      1000 coin flips 10.000 times and make 
+                                         the same number of coin flips 10.000 times and make 
                                            a histogram of the results. The result
                                            looks very close to a normal distribution. 
                                            By clicking the button below you can try again 

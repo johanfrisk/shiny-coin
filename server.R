@@ -31,7 +31,7 @@ shinyServer(function(input, output) {
                 
                 # populate the list with results for 10.000 sequences of flips
                 for(i in 1:10000) {
-                        coinTosses   <- cumsum(sample(c(-1,1), 1000, replace = TRUE)) 
+                        coinTosses   <- cumsum(sample(c(-1,1), input$flips, replace = TRUE)) 
                         results[[i]] <- coinTosses[length(coinTosses)]
                 }
                 
